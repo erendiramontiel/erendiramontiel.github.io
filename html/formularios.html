@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>Formularios en HTML</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Six+Caps&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gotu&family=Six+Caps&display=swap" rel="stylesheet">
+        
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../css/style.CSS" type="text/css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li class="animate__animated animate__heartBeat animate__delay-1s"><a href="../index.html"><img id="img_casa" src="../imagenes/home.png" target="new"></a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-1s"><a href="../html/formatodetexto.html">Formatos</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-2s"><a href="../html/listas.html">Listas</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-2s"><a href="../html/enlaces.html">Enlaces</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-3s"><a href="../html/tablas.html">Tablas</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-3s"><a href="../html/imagenes.html">Imagenes</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-4s"><a href="../html/audio.html">Audio</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-4s"><a href="../html/video.html">Video</a></li>
+                <li class="animate__animated animate__heartBeat animate__delay-5s"><a href="../html/formularios.html">Formularios</a></li>
+            </ul>
+        </header>
+        <nav>
+            <h1 class="animate__animated animate__flip animate__repeat-2">FORMULARIOS</h1>
+        </nav>
+        <main>
+            <section>
+                <h2>Formularios</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in urna libero. Integer auctor massa magna, sed hendrerit ipsum ultricies quis. Nunc gravida ultrices eros, at interdum lectus venenatis sed. Phasellus id felis ut orci hendrerit porttitor ac sed risus. Pellentesque eu nunc id nibh feugiat feugiat. Aliquam auctor diam gravida placerat volutpat. Sed faucibus pharetra magna vel rutrum. Fusce at dictum urna. In erat augue, tempor at pretium convallis, convallis tempus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ornare, felis ac porta bibendum, lectus orci lacinia nisl, non molestie purus massa.</p>
+                <form action="" method="get">
+                    <label for="fnombre">Nombre</label>
+                    <input type="text" id="fnombre" name="fnombre" value="Escribe tu nombre aqui...">
+                    <label for="fapellido">Apellido</label>
+                    <input type="text" id="fapellido" name="fapellido" value="Escribe tu apellido...">
+                    
+                    <label for="naci">¿Cuál es tu país de recidencia?</label>
+                    <select id="naci-ul" name="naci-ul">
+                        <option value="mex">México</option>
+                        <option value="es">España</option>
+                        <option value="us">Estados Unidos</option>
+                        <option value="it">Italia</option>
+                        <option value="co">Colombia</option>
+                        <option value="al">Alemania</option>
+                        <option value="fra">Francia</option>
+                        <option value="arg">Argentina</option>
+                    </select>
+                    
+                    <label for="fedad">Edad</label>
+                    <input type="text" id="fedad" name="fedad" value="Escribe tu edad...">
+                    
+                    <label for="birthday">Fecha de nacimiento:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <section>
+                <h2>Elementos de lista</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in urna libero. Integer auctor massa magna, sed hendrerit ipsum ultricies quis. Nunc gravida ultrices eros, at interdum lectus venenatis sed. Phasellus id felis ut orci hendrerit porttitor ac sed risus. Pellentesque eu nunc id nibh feugiat feugiat. Aliquam auctor diam gravida placerat volutpat. Sed faucibus pharetra magna vel rutrum. Fusce at dictum urna. In erat augue, tempor at pretium convallis, convallis tempus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ornare, felis ac porta bibendum, lectus orci lacinia nisl, non molestie purus massa.</p>
+                <form action="/action_page.php">
+                    <legend>Genero:</legend>
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Femenino">
+                        <option value="Masculino">
+                        <option value="Neutro">
+                    </datalist>
+                    <br>
+                    <legend>¿Cuál es tu estatura?</legend>
+                
+
+                    <input type="radio" id="miniom" name="miniom" value="miniom">
+                    <label for="miniom">Miniom (1.40 m. hacia a bajo)</label>
+                    <br>
+                    <input type="radio" id="elfo" name="elfo" value="elfo">
+                    <label for="elfo">Elfo (1.50 a 1.70 m.)</label>
+                    <br>
+                    <input type="radio" id="valk" name="valk" value="valk">
+                    <label for="valk">Valkiria (1.74 en adelante)</label>
+                    <br>
+                    <input type="radio" id="bigboy" name="bigboy" value="bigboy">
+                    <label for="bigboy">Big boy nacional (1.85 m en adelante)</label>
+                    <br>
+                    <input type="radio" id="bigboyin" name="bigboyin" value="bigboyin">
+                    <label for="bigboyin">Big boy Internacional (1.90 m. en adelante)</label>
+                    <br>
+                    <input type="submit">
+                </form> 
+            </section>
+            <section>
+                <h2>Formularios</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in urna libero. Integer auctor massa magna, sed hendrerit ipsum ultricies quis. Nunc gravida ultrices eros, at interdum lectus venenatis sed. Phasellus id felis ut orci hendrerit porttitor ac sed risus. Pellentesque eu nunc id nibh feugiat feugiat. Aliquam auctor diam gravida placerat volutpat. Sed faucibus pharetra magna vel rutrum. Fusce at dictum urna. In erat augue, tempor at pretium convallis, convallis tempus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ornare, felis ac porta bibendum, lectus orci lacinia nisl, non molestie purus massa.</p>
+                <form method="get" action="">
+                <legend>Cita soñada</legend>
+                <textarea name="message" rows="10" cols="30">text here</textarea>
+                    <br><br>
+                <legend>¿Quien paga la cuenta?</legend>
+                <input type="checkbox" id="ella" name="ella" value="ella">
+                <label for="ella">Ella paga</label>
+                    
+                <input type="checkbox" id="el" name="el" value="el">
+                <label for="el">Él paga</label>
+
+                <input type="checkbox" id="cincuenta" name="cincuenta" value="cicuenta">
+                <label for="cincuenta">50/50</label>
+                <br>
+                
+                <label for="fpago">¿Canto estás dispuest@ a gastar en una cita?</label>
+                    <input type="text" id="fpago" name="fpago" value="Escribe la cantidad aqui...">
+                    <input type="submit">
+        
+                </form>
+            </section>
+            <section>
+                <h2>Formularios</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in urna libero. Integer auctor massa magna, sed hendrerit ipsum ultricies quis. Nunc gravida ultrices eros, at interdum lectus venenatis sed. Phasellus id felis ut orci hendrerit porttitor ac sed risus. Pellentesque eu nunc id nibh feugiat feugiat. Aliquam auctor diam gravida placerat volutpat. Sed faucibus pharetra magna vel rutrum. Fusce at dictum urna. In erat augue, tempor at pretium convallis, convallis tempus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ornare, felis ac porta bibendum, lectus orci lacinia nisl, non molestie purus massa.</p>
+                <form method="get" action="">
+                    <label for="color">¿Cuál es tu color favorito?</label>
+                    <br>
+                    <input type="color" value="" id="color-fav" name="color-fav">
+                    <br>
+
+                    <label for="mascotas">¿Cuál es tu animal favorito?</label>
+                    <select id="animal" name="animal">
+                        <option value="Perros">Perros</option>
+                        <option value="Gatos">Gatos</option>
+                        <option value="Peces">Peces</option>
+                        <option value="Canarios">Canarios</option>
+                        <option value="Torgutas">Tortugas</option>
+                    </select>
+
+
+                    <label for="prefieres">¿Qué prefieres?</label>
+                    <select id="prefieres" name="prefieres">
+                        <option value="Libros">Libros</option>
+                        <option value="Peliculas">Peliculas</option>
+                        <option value="Musica">Musica</option>
+                        <option value="Viajes">Viajes</option>
+                        <option value="Deportes">Deportes de aventura</option>
+                    </select>
+
+                    <label for="flibro">Si elegiste libros...</label>
+                    <input type="text" id="flibro" name="flibro" value="Escribe el nombre de tu libro favorito...">
+                   
+                    <label for="flibro">Si elegiste peliculas...</label>
+                    <input type="text" id="fpeli" name="fpeli" value="Escribe el nombre de tu pelicula favorita...">
+                    
+                    
+                    <label for="flibro">Si elegiste musica selecciona tu genero favorito...</label>
+                    
+                    <br>
+                    <input type="checkbox" id="rock" name="rock" value="rock">
+                    <label for="rock">Rock</label>
+                    <br>
+                    <input type="checkbox" id="Reggaton" name="Reggaton" value="Reggaton">
+                    <label for="Reggaton">Reggaton</label>
+                    <br>
+                    <input type="checkbox" id="Pop" name="Pop" value="Pop">
+                    <label for="Pop">Pop</label>
+                    <br>
+                    <input type="checkbox" id="trap" name="trap" value="trap">
+                    <label for="trap">Trap</label>
+                    <br>
+                    <input type="checkbox" id="indi" name="indi" value="indi">
+                    <label for="indi">Indi</label>
+                    <br>
+                    
+                    <label for="flibro">Si elegiste viajes...</label>
+                    <br>
+                    <textarea name="message" rows="15" cols="50">Cuéntame la experiencia de tu mejor viaje...</textarea>
+                    <br>
+                    
+                    <label for="aventura">Si elegiste deportes de aventura</label>
+                    <input type="text" id="faventura" name="aventura" value="Escribe ¿cuál o cuales practicas?">
+                    
+                    <input type="submit" value="enviar">
+                </form>
+            </section>
+            <section>
+                <h2>FIN DEL FORMULARIO</h2>
+                <p>FORMAS DE CONTACTO</p>
+                <button type="button" onclick="alert('GRACIAS POR DEJAR TU CURRICULUM NOSOTROS TE LLAMAMOS ;)')">Click Me</button>
+            </section>
+            <footer>
+                <h6>Elaborado por: Erendira Milipsa Montiel Garcia</h6>
+            </footer>
+        </main>
+    </body>
+</html>
